@@ -84,14 +84,14 @@ a.nav-link {
 
 /* Top Courses Background image start */
 
-.backgroundimg {
+/* .backgroundimg {
   background: url("images/images (16).jpeg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
   width: 200px;
   height: 200px;
-}
+} */
 
 /* Top Courses Background image start */
 
@@ -107,12 +107,12 @@ a.nav-link {
 
 /* Navbar and Hero Section Background image start */
 
-.bg {
+/* .bg {
   background: url(images/Hero-BG.jpg);
-  /* background-position: cover; */
+  background-position: cover;
   background-repeat: no-repeat;
   background-position: center top;
-}
+} */
 
 /* Navbar and Hero Section Background image End */
 
@@ -137,12 +137,14 @@ a.nav-link {
   left: 60px;
 }
 
+
 /* Student Succes Span End*/
 
 
 /* Tob courses Start*/
 
 .course{
+    width: 300px;
     position: relative;
     margin-bottom: 20px;
 }
