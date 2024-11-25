@@ -29,13 +29,13 @@ button.btn.btn-primary {
 }
 
 a.nav-link {
-    
+    font-weight: bold;
 }
 
 a.nav-link:hover{
   background-color: #099647;
   border-radius: 5px;
-  color: white;
+  color: white !important;
 }
 
 .nav-link{
