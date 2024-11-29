@@ -1,0 +1,116 @@
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Student Section Start -->
+
+
+
+  <section class="mt-5 p-2" style="background-color:  #0C9547">
+      <h1 class="fw-bold text-center mb-5" style="color: white">Our Students</h1>
+      <div class="container d-flex justify-content-center flex-wrap mt-3 mb-3 p-3">
+
+
+        <!-- Student 1 -->
+
+
+            <div class="card modify teachers-card col-md-3">
+              <span class="student-roll">১</span>
+                <div class="card-image-wrapper">
+                   <img class="card-image rounded-circle" src="images/aminul.jpg" alt="">
+                   <span class="student-subject">Web</span>
+                </div>
+
+                <div class="card-content">
+                    <h1 class="text-black fw-bold">Aminul Islam</h1>
+                    <p>
+                      <span>Diploma in Web Application And Development</span>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- Student 2 -->
+
+
+            <div class="card modify teachers-card col-md-3">
+              <span class="student-roll">২</span>
+                <div class="card-image-wrapper">
+                   <img class="card-image rounded-circle" src="images/sanjit.jpg" alt="">
+                   <span class="student-subject">Web</span>
+                </div>
+
+                <div class="card-content">
+                    <h1 class="text-black fw-bold">Shanzit Hossain Taim</h1>
+                    <p>
+                      <span>Diploma in Web Application And Development</span>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- Student 3 -->
+
+
+            <div class="card modify teachers-card col-md-3">
+              <span class="student-roll">৩</span>
+                <div class="card-image-wrapper">
+                   <img style="object-fit: cover;" class="card-image rounded-circle" src="images/efat.jpg" alt="">
+                   <span class="student-subject">Web</span>
+                </div>
+
+                <div class="card-content">
+                    <h1 class="text-black fw-bold">Efat Sarkar</h1>
+                    <p>
+                      <span>Diploma in Web Application And Development</span>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- Student 4 -->
+
+
+            <div class="card modify teachers-card col-md-3">
+              <span class="student-roll">৪</span>
+                <div class="card-image-wrapper">
+                   <img class="card-image rounded-circle" src="images/shown.jpg" alt="">
+                   <span class="student-subject">Web</span>
+                </div>
+
+                <div class="card-content">
+                    <h1 class="text-black fw-bold">Shawon Mahmud</h1>
+                    <p>
+                      <span>Diploma in Web Application And Development</span>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+      </div>
+            
+
+          <div class="d-flex justify-content-center">
+            <a href="students.html" style="color: black; background-color: white;" class="button-hover w-10 btn btn-primary mb-4">
+            See All Students
+            </a>
+          </div>
+            
+        
+    </section> 
+
+
+
+  <!-- Student Section End -->

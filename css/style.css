@@ -22,22 +22,59 @@ body {
   
 }
 
+a.btn.btn-primary {
+    outline: none;
+    border: 1px solid #099647;
+    background-color: #099647;
+}
+
 button.btn.btn-primary {
     outline: none;
-    border: none;
+    border: 1px solid #099647;
     background-color: #099647;
 }
 
 a.nav-link {
     font-size: 18px;
     font-weight: bold;
+    position: relative;
 }
 
-a.nav-link:hover{
+/* a.nav-link:hover{
   background-color: #099647;
   border-radius: 5px;
   color: white !important;
+} */
+
+.a-nav-hover::after{
+  content: "";
+  position: absolute;
+  background-color: #099647;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 2px;
+  transition: 0.3s;
 }
+
+.a-nav-hover:hover::after{
+  width: 100%;
+}
+
+
+
+/* Dropdown Menu Hover */
+
+.dropdown-item{
+  color: #EC2127 !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
 
 .nav-link{
   margin-right: 35px;
@@ -179,5 +216,95 @@ a.nav-link {
 }
 
 
+
+
+
+
+
+
+/* Hide Navbar button 1199px  */
+
+
+@media (max-width: 1200px) {
+      .navbar-button{
+        display: none !important;
+      }
+    }
+
+
+    
+    
+    /* Navbar button hover effect */
+
+
+.navbar-button{
+  display: flex;
+  gap: 15px;
+  width: 237px;
+}
+
+.navbar-button a:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.button-hover:hover{
+  background-color: transparent !important;
+  color: black;
+  border: 1px solid black !important;
+}
+
+
+
+/* Course card Hover Effect */
+
+
+/* Fade-in animation for card */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover animation for scaling effect */
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.course {
+    animation: fadeIn 0.8s ease-out; /* Card will fade in */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.course:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Add shadow on hover */
+}
+
+/* For rounded image hover effect */
+.course img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course img:hover {
+    transform: scale(1.1); /* Enlarge image */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Shadow around image */
+}
+
+
+
+/* Course Button Hover Effect */
 
 

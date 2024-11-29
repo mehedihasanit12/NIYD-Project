@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/teachers.css">
   <link rel="stylesheet" href="css/students.css">
+  <link rel="stylesheet" href="css/carousel.css">
+
+  <link rel="shortcut icon" href="images/shniyd_logo-removebg-preview.png" type="image/x-icon">
   
       <!-- Bangla Font Add -->
   
@@ -59,43 +62,61 @@
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link a-nav-hover" href="index.html">Home</a>
               </li>
 
 
               <li class="nav-item">
-                <a class="nav-link" href="courses.html">Courses</a>
+                <a class="nav-link a-nav-hover" href="courses.html">Courses</a>
               </li>
 
 
               <li class="nav-item">
-                <a class="nav-link" href="success.html">Success</a>
+                <a class="nav-link a-nav-hover" href="success.html">Success</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="teachers.html">Our Teachers</a>
+                <a class="nav-link a-nav-hover" href="teachers.html">Our Teachers</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="students.html">Our Students</a>
+
+
+
+              <!-- Dropdown Menu Start -->
+
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-hover" data-bs-toggle="dropdown" aria-expanded="false" href="#">Our Students</a>
+                  <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="students.html">Web Application</a></li>
+                      <li><a class="dropdown-item" href="#">Hotel Management</a></li>
+                      <li><a class="dropdown-item" href="#">ICT</a></li>
+                  </ul>
               </li>
 
+
+              <!-- Dropdown Menu End -->
+
+
+
               <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link a-nav-hover" href="gallery.html">Gallery</a>
               </li>
              
             </ul>
 
             <!-- SignUp SignIn Start -->
 
-            <div class="d-none d-md-block">
-              <button type="button" class="btn btn-primary">
+            <div class="navbar-button">
+              <a href="login.html" type="button" class="btn btn-primary">
                 <i class="fa-solid fa-right-to-bracket"></i>
-                Sign In</button>
+                Sign In</a>
 
-              <button type="button" class="btn btn-primary">
+              <a href="signup.html" type="button" class="btn btn-primary">
                 <i class="fas fa-user-tie"></i>
-                Sign Up</button>
+                Sign Up</a>
             </div>
 
 
@@ -121,7 +142,7 @@
   <!-- Notice Section Start-->
 
   <section>
-    <div style="height:50px" class="alert alert-info bangla-font" role="alert">
+    <div style="height:50px" class="alert alert-info mb-0 bangla-font" role="alert">
      <marquee direction="left" scrollamount="7">
        <p><b>জাতীয় যুব উন্নয়ন ইনস্টিটিউটে আপনাকে স্বাগতম;</b> ** চলমান সংক্ষিপ্ত কোর্স <span style="font-weight:bold;"> ১) Food Beverage Production ** চলমান ডিপ্লোমা কোর্স ২) Diploma in Web Application and Web Development Diploma in ICT এবং ৩) Diploma in Hotel, Tourism and Hospitality Management </span> </p>
      </marquee>
@@ -130,77 +151,231 @@
 
   <!-- Notice Section End-->
 
-    <!-- Hero Section Start -->
 
-    <section class="hero-section">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-6 left-content">
-            <h2 style="color: #ebb36b; font-size: 45px; font-weight: 700;">Change Your Life with National Institute of Youth Development</h2>
-            <p style="color:#775b23; font-size: 22px; font-weight: 300;">
-              National Institute of Youth Development teaches you the skills you need to<br> thrive and
-              earn online - now and in the future.
-            </p>
+  <!-- Banner Section -->
 
-            <button type="button" class="btn btn-primary">
-              View Courses
-            </button>
-          </div>
 
-          <div class="col-md-6 mb-2 right-content right-img">
-            <img src="images/niyd-bg.jpg" alt="" />
-          </div>
-        </div>
+  <!-- <section class="banner-section container">
+
+    <div id="bannerCarousel" class="carousel slide">
+
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-    </section>
 
-  <!-- Hero Section End -->
 
-  <!--institution Success Start  -->
 
-  <section class="student mt-3">
-    <div class="container">
-      <div class="d-md-flex gap-3 justify-content-between">
-        <div class="w-30 p-2 mb-2 bg-danger rounded">
-          <img class="image" src="images/graduation-cap.png" alt="" />
-          <h3>
-            26,000+<br />
-            Graduates
-          </h3>
-          <p>
-            National Institute of Youth Development has trained 26,000+ trainees so far. And it's
-            increasing everyday.
-          </p>
+
+
+    <div class="carousel-inner">
+
+
+
+      <div class="carousel-item active">
+        <img src="images/hero-section.jpg" class="d-block w-100" alt="images/hero-section.jpg.">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
+    </div>
 
-        <div class="w-30 p-2 mb-2 bg-success rounded">
-          <img class="image" src="images/money-bag.png" alt="" />
-          <h3>
-            $23 Million+<br />
-            Earned
-          </h3>
-          <p>
-            Our students has reached the combined earning of $23 Million+
-            (USD) so far.
-          </p>
-        </div>
 
-        <div class="w-30 p-2 mb-2 bg-info rounded">
-          <img class="image" src="images/people.png" alt="" />
-          <h3>
-            650K+<br />
-            Members
-          </h3>
-          <p>
-            Over 650K+ people are connected with us through social media and
-            supporting our mission.
-          </p>
-        </div>
+
+
+    <div class="carousel-item">
+      <img src="images/hero-section.jpg" class="d-block w-100" alt="images/hero-section.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
-  </section>
 
-  <!--institution Success End -->
+
+    <div class="carousel-item">
+      <img src="images/hero-section.jpg" class="d-block w-100" alt="images/hero-section.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+    </div>
+
+
+  </section> -->
+
+
+
+  <!-- Banner Section -->
+
+
+
+      <!-- Carousel Section -->
+
+
+
+
+  <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Untitled design (1).png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark">
+
+        <h2 style="color: #ebb36b; font-size: 30px; font-weight: 700;">Transform Your Future with the National Institute of Youth Development</h2>
+            <p style="color:#775b23; font-size: 18px; font-weight: 300;">
+           The National Institute of Youth Development empowers young men and women with training to build essential skills, boost self-reliance, and prepare for professional success.
+            </p>
+
+            
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Untitled design (2).png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark">
+
+        <h2 style="color: #ebb36b; font-size: 30px; font-weight: 700;">Our Library</h2>
+            <p style="color:#775b23; font-size: 18px; font-weight: 300;">
+              Discover the World of Knowledge
+            </p>
+
+            
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Untitled design (3).png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark">
+
+        <h2 style="color: #ebb36b; font-size: 30px; font-weight: 700;">Our Digital Classroom</h2>
+            <p style="color:#775b23; font-size: 18px; font-weight: 300;">
+              Where Technology and Knowledge Come Together
+            </p>
+
+            
+
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <img src="images/Untitled design (4).png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark">
+
+        <h2 style="color: #ebb36b; font-size: 30px; font-weight: 700;">Auditorium</h2>
+        
+
+            
+
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <img src="images/hostel.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark">
+
+        <h2 style="color: #ebb36b; font-size: 30px; font-weight: 700;">Male,Female Hostel</h2>
+            
+
+            
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+<!-- Carousel Section End -->
+
+
+
+
+<!-- Institution Success Start -->
+
+
+
+
+<section>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-around">
+
+
+
+      <div class="institution-card card d-flex align-items-center">
+        <img style="width: 100px; height: 100px;" class="card-img" src="images/icons8-graduation-cap-100.png" alt="">
+
+        <div class="card-body">
+          <h1 class="card-title fw-bold">Join 11,000+ Success Stories</h1>
+
+          <p class="card-text">
+            National Institute of Youth Development has already trained over 11,000 individuals—and the journey continues.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="bg-info institution-card card d-flex align-items-center">
+        <img style="width: 100px; height: 100px;" class="card-img" src="images/icons8-money-bag-100.png" alt="">
+
+        <div class="card-body">
+          <h1 class="card-title fw-bold">$23 Million+ Earned</h1>
+
+          <p class="card-text">
+              Our students have collectively earned over $23 million (USD) and continue to achieve more every day.
+          </p>
+        </div>
+      </div>
+
+
+      <div style="background-color: #055160;" class="institution-card card d-flex align-items-center">
+        <img style="width: 100px; height: 100px;" class="card-img" src="images/icons8-crowd-100.png" alt="">
+
+        <div class="card-body">
+          <h1 class="card-title fw-bold">5.7K+ Members</h1>
+
+          <p class="card-text">
+            Over 5.7K+ people are connected with us through social media and supporting our mission.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+          <!-- Institution Success End -->
 
   <!-- Feature Section 1 -->
 
@@ -217,7 +392,7 @@
             experience.
           </p>
 
-          <button type="button" class="btn btn-primary">View Courses</button>
+          <button type="button" class="button-hover btn btn-primary">View Courses</button>
         </div>
 
         <div class="col-md-6 right-content">
@@ -242,7 +417,7 @@
             Our goal is to make your training journey easier and more convenient. Here, you will receive completely free accommodation and meals, allowing you to focus fully on improving your skills and knowledge. This opportunity is limited, so register soon and take a step forward in building your career!
           </p>
 
-          <button type="button" class="btn btn-primary">Register Now</button>
+          <button type="button" class="button-hover btn btn-primary">Register Now</button>
         </div>
       </div>
     </div>
@@ -262,7 +437,7 @@
             Our training institute offers a comprehensive library with a vast selection of course-related books and resources. During your training, you’ll have full access to these materials, helping you expand your knowledge and deepen your understanding of course topics.
           </p>
 
-          <button type="button" class="btn btn-primary">View Courses</button>
+          <button type="button" class="button-hover btn btn-primary">View Courses</button>
         </div>
 
         <div class="col-md-6 right-content">
@@ -291,7 +466,7 @@
             jobs in good companies.
           </p>
 
-          <button type="button" class="btn btn-primary">View Courses</button>
+          <button type="button" class="button-hover btn btn-primary">View Courses</button>
         </div>
 
       </div>
@@ -306,8 +481,31 @@
     <!-- Courses Start -->
 
   <section id="courses" class="mt-5 p-2" style="background-color:  #0C9547">
-      <h1 class="text-center mb-5" style="color: white">Top Courses</h1>
-      <div class="container d-md-flex gap-3 justify-content-between mt-3 mb-3 p-3">
+      <h1 class="fw-bold text-center mb-5" style="color: white">Top Courses</h1>
+      <div class="container d-flex gap-3 justify-content-center flex-wrap mt-3  p-3">
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="apply" tabindex="-1" aria-labelledby="apply" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="apply">You Are Not Registerd!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  You have not registered yet. Please register first to apply.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="signup.html" type="button" class="btn btn-primary">Registration Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Web -->
 
@@ -324,7 +522,7 @@
             Class Count: 46
           </p>
 
-          <button class="btn btn-primary" type="button">Enroll Now</button>
+          <button data-bs-toggle="modal" data-bs-target="#apply" class="button-hover btn btn-primary" type="button">Apply Now</button>
         </div>
 
         <!-- Hotel -->
@@ -343,7 +541,7 @@
             Class Count: 46
           </p>
 
-          <button class="btn btn-primary" type="button">Enroll Now</button>
+          <button data-bs-toggle="modal" data-bs-target="#apply" class="button-hover btn btn-primary" type="button">Apply Now</button>
         </div>
 
         
@@ -362,7 +560,7 @@
             Class Count: 20
           </p>
 
-          <button class="btn btn-primary" type="button">Enroll Now</button>
+          <button data-bs-toggle="modal" data-bs-target="#apply" class="button-hover btn btn-primary" type="button">Apply Now</button>
         </div>
 
 
@@ -382,27 +580,16 @@
             Class Count: 20
           </p>
 
-          <button class="btn btn-primary" type="button">Enroll Now</button>
+          <button data-bs-toggle="modal" data-bs-target="#apply" class="button-hover btn btn-primary" type="button">Apply Now</button>
         </div>
 
-        <!-- Bakery & Pastry Production -->
+        
 
-        <div class="course card p-3 text-center">
-          <h5 class="mt-3 mb-3">Bakery & Pastry</h5>
-          <div class="mb-3">
-          <img style="width: 180px; height: 180px;object-fit: cover;" src="images/pastry.jpeg" alt="" />
-          <span class="bg-primary badge badge-secondary">Short Course</span>
-          <img class="free" src="images/free.png" alt="">
-         </div>
-          <p>
-            <b>Bakery & Pastry</b><br />
-            Duration: 2 Month<br />
-            Class Count: 20
-          </p>
-
-          <button class="btn btn-primary" type="button">Enroll Now</button>
-        </div>
-      </div>
+        <div class="d-flex justify-content-center">
+            <a href="courses.html" style="color: black; background-color: white;" class="button-hover w-10 btn btn-primary mb-2">
+            See All Courses
+            </a>
+          </div>
          
         
     </section>
@@ -422,8 +609,8 @@
 
 
   <section id="teachers" class="mt-5 p-2" style="background-color:  #0C9547">
-      <h1 class="text-center mb-5" style="color: white">Our Teachers</h1>
-      <div class="container d-md-flex gap-3 justify-content-between mt-3 mb-3 p-3">
+      <h1 class="fw-bold text-center mb-5" style="color: white">Our Teachers</h1>
+      <div class="container d-flex  justify-content-center flex-wrap  mt-3 mb-3 p-3">
 
 
         <!-- Teacher 1 -->
@@ -513,7 +700,7 @@
             
 
           <div class="d-flex justify-content-center">
-            <a href="teachers.html" style="color: black; background-color: white; border: none;" class="w-10 btn btn-primary mb-4">
+            <a href="teachers.html" style="color: black; background-color: white; ;" class="button-hover w-10 btn btn-primary mb-4">
             See All Teachers
             </a>
           </div>
@@ -529,114 +716,7 @@
 
 
 
-  <!-- Student Section Start -->
 
-
-
-  <section id="teachers" class="mt-5 p-2" style="background-color:  #0C9547">
-      <h1 class="text-center mb-5" style="color: white">Our Students</h1>
-      <div class="container d-md-flex gap-3 justify-content-between mt-3 mb-3 p-3">
-
-
-        <!-- Student 1 -->
-
-
-            <div class="card modify teachers-card col-md-3">
-              <span class="student-roll">১</span>
-                <div class="card-image-wrapper">
-                   <img class="card-image rounded-circle" src="images/aminul.jpg" alt="">
-                   <span class="student-subject">Web</span>
-                </div>
-
-                <div class="card-content">
-                    <h1 class="text-black fw-bold">Aminul Islam</h1>
-                    <p>
-                      <span>Diploma in Web Application And Development</span>
-                        
-                    </p>
-                </div>
-            </div>
-
-
-
-            <!-- Student 2 -->
-
-
-            <div class="card modify teachers-card col-md-3">
-              <span class="student-roll">২</span>
-                <div class="card-image-wrapper">
-                   <img class="card-image rounded-circle" src="images/sanjit.jpg" alt="">
-                   <span class="student-subject">Web</span>
-                </div>
-
-                <div class="card-content">
-                    <h1 class="text-black fw-bold">Shanzit Hossain Taim</h1>
-                    <p>
-                      <span>Diploma in Web Application And Development</span>
-                        
-                    </p>
-                </div>
-            </div>
-
-
-
-
-            <!-- Student 3 -->
-
-
-            <div class="card modify teachers-card col-md-3">
-              <span class="student-roll">৩</span>
-                <div class="card-image-wrapper">
-                   <img style="object-fit: cover;" class="card-image rounded-circle" src="images/efat.jpg" alt="">
-                   <span class="student-subject">Web</span>
-                </div>
-
-                <div class="card-content">
-                    <h1 class="text-black fw-bold">Efat Sarkar</h1>
-                    <p>
-                      <span>Diploma in Web Application And Development</span>
-                        
-                    </p>
-                </div>
-            </div>
-
-
-
-            <!-- Student 4 -->
-
-
-            <div class="card modify teachers-card col-md-3">
-              <span class="student-roll">৪</span>
-                <div class="card-image-wrapper">
-                   <img class="card-image rounded-circle" src="images/shown.jpg" alt="">
-                   <span class="student-subject">Web</span>
-                </div>
-
-                <div class="card-content">
-                    <h1 class="text-black fw-bold">Shawon Mahmud</h1>
-                    <p>
-                      <span>Diploma in Web Application And Development</span>
-                        
-                    </p>
-                </div>
-            </div>
-
-
-      </div>
-            
-
-          <div class="d-flex justify-content-center">
-            <a href="students.html" style="color: black; background-color: white; border: none;" class="w-10 btn btn-primary mb-4">
-            See All Students
-            </a>
-          </div>
-            
-        
-    </section>
-
-
-
-  <!-- Student Section End -->
 
 
 
@@ -677,7 +757,7 @@
 
 
 
-                <a class="btn btn-primary mb-4" style="background-color: #0C9547; border: none;" href="success.html">See All Sccess Story</a>
+                <a class="button-hover btn btn-primary mb-4" style="background-color: #0C9547;" href="success.html">See All Sccess Story</a>
 
 
 

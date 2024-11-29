@@ -22,3 +22,53 @@
     color: white;
 }
 
+
+/*  */
+
+
+
+
+/* Fade-in animation for card */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover animation for scaling effect */
+
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.teachers-card {
+    animation: fadeIn 0.8s ease-out; /* Card will fade in */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.teachers-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Add shadow on hover */
+}
+
+/* For rounded image hover effect */
+.card-image-wrapper img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-image-wrapper img:hover {
+    transform: scale(1.1); /* Enlarge image */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Shadow around image */
+}

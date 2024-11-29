@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/teachers.css">
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="shortcut icon" href="images/shniyd_logo-removebg-preview.png" type="image/x-icon">
   
       <!-- Bangla Font Add -->
   
@@ -37,7 +39,7 @@
         <div class="container p-2 ">
 
           <div class="logo">
-            <a href="index.html" class="navbar-brand">
+            <a href="#" class="navbar-brand">
               <img src="images/shniyd_logo.jpg" alt="" />
             </a>
 
@@ -58,48 +60,64 @@
 
 
 
-          
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link a-nav-hover" href="index.html">Home</a>
               </li>
 
 
               <li class="nav-item">
-                <a class="nav-link" href="courses.html">Courses</a>
+                <a class="nav-link a-nav-hover" href="courses.html">Courses</a>
               </li>
 
 
               <li class="nav-item">
-                <a class="nav-link" href="success.html">Success</a>
+                <a class="nav-link a-nav-hover" href="success.html">Success</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="teachers.html">Our Teachers</a>
+                <a class="nav-link a-nav-hover" href="teachers.html">Our Teachers</a>
               </li>
+
+
+
+
+              <!-- Dropdown Menu Start -->
+
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-hover" data-bs-toggle="dropdown" aria-expanded="false" href="#">Our Students</a>
+                  <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="students.html">Web Application</a></li>
+                      <li><a class="dropdown-item" href="#">Hotel Management</a></li>
+                      <li><a class="dropdown-item" href="#">ICT</a></li>
+                  </ul>
+              </li>
+
+
+              <!-- Dropdown Menu End -->
+
+
 
               <li class="nav-item">
-                <a class="nav-link" href="students.html">Our Students</a>
+                <a class="nav-link a-nav-hover" href="gallery.html">Gallery</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-
              
             </ul>
 
             <!-- SignUp SignIn Start -->
 
-            <div class="d-none d-md-block">
-              <button type="button" class="btn btn-primary">
+             <div class="navbar-button">
+              <a href="login.html" type="button" class="btn btn-primary">
                 <i class="fa-solid fa-right-to-bracket"></i>
-                Sign In</button>
+                Sign In</a>
 
-              <button type="button" class="btn btn-primary">
+              <a href="signup.html" type="button" class="btn btn-primary">
                 <i class="fas fa-user-tie"></i>
-                Sign Up</button>
+                Sign Up</a>
             </div>
 
 
