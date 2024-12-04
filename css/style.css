@@ -307,4 +307,17 @@ a.nav-link {
 
 /* Course Button Hover Effect */
 
+.hero-section{
+  display: none;
+}
 
+
+@media (max-width: 480px) {
+      .hero-section{
+        display: block !important;
+      }
+
+      .banner{
+        display: none;
+      }
+    }
